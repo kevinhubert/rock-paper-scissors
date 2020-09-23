@@ -29,6 +29,12 @@ html body {
 }
 
 .alert-danger,
-.alert-success {
+.alert-success,
+.alert-warning {
     display: none;
+}
+
+#player-choice,
+#computer-choice {
+    text-transform: capitalize !important;
 }

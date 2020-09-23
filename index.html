@@ -27,9 +27,9 @@
                         </blockquote>
                     </div>
                     <div class="controller">
-                        <button type='button' class="btn btn-primary"><i class="fas fa-hand-rock"></i> Rock</button>
-                        <button type='button' class="btn btn-primary"><i class="fas fa-hand-paper"></i> Paper</button>
-                        <button type='button' class="btn btn-primary"><i class="fas fa-hand-scissors"></i> Scissors</button>
+                        <button type='button' onClick="start('rock')" class="btn btn-primary"><i class="fas fa-hand-rock"></i> Rock</button>
+                        <button type='button' onClick="start('paper')" class="btn btn-primary"><i class="fas fa-hand-paper"></i> Paper</button>
+                        <button type='button' onClick="start('scissors')" class="btn btn-primary"><i class="fas fa-hand-scissors"></i> Scissors</button>
                     </div>
                     <div class="score">
                         <div class="row">
@@ -38,8 +38,8 @@
                                 <div class="card">
                                     <h5 class="card-header">Player</h5>
                                     <div class="card-body">
-                                        <h5 class="card-title">Score: <span class="player-score">0</span></h5>
-                                        <p class="card-text">Your choice: <b class="player-choice">Nothing!</b></p>
+                                        <h5 class="card-title">Score: <span id="player-score">0</span></h5>
+                                        <p class="card-text">Your choice: <b id="player-choice">Nothing!</b></p>
                                     </div>
                                 </div>
                                 <!-- ./Player -->
@@ -49,8 +49,8 @@
                                 <div class="card">
                                     <h5 class="card-header">Computer</h5>
                                     <div class="card-body">
-                                        <h5 class="card-title">Score: <span class="computer-score">0</span></h5>
-                                        <p class="card-text">Computer choice: <b class="computer-choice">Nothing!</b></p>
+                                        <h5 class="card-title">Score: <span id="computer-score">0</span></h5>
+                                        <p class="card-text">Computer choice: <b id="computer-choice">Nothing!</b></p>
                                     </div>
                                 </div>
                                 <!-- ./Computer -->
@@ -58,11 +58,14 @@
                         </div>
                     </div>
                     <div class="status">
-                        <div class="alert alert-success" role="alert">
+                        <div class="alert alert-success" id="success" role="alert">
                             <b>Congratulations!</b> You won this round.
                         </div>
-                        <div class="alert alert-danger" role="alert">
+                        <div class="alert alert-danger" id="danger" role="alert">
                             <b>Oops!</b> Computer won this round.
+                        </div>
+                        <div class="alert alert-warning" id="warning" role="alert">
+                            <b>Draw!</b> No Winner.
                         </div>
                     </div>
                 </div>
