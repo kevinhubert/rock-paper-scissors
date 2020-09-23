@@ -16,7 +16,6 @@ function start(inputBtn) {
   // }
 
   const options = ["Rock", "Paper", "Scissors"];
-  var randomNumber = Math.floor(Math.random() * 100);
   //return an int that will map to an array item in the list
   const computerChoice = options[Math.floor(Math.random() * options.length)];
 
