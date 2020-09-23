@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Rock Paper Scissors</title>
+    <!-- Meta -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- StyleSheet -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Wrapper -->
+    <div class="wrapper">
+        <div class="container">
+            <div class="row">
+                <!-- Content -->
+                <div class="col text-center">
+                    <div class="header">
+                        <h3>SHALL WE PLAY A GAME?</h3>
+                        <h1>Rock, Paper, Scissors</h1>
+                    </div>
+                    <div class="rules">
+                        <blockquote class="blockquote">
+                            <p class="mb-0"><b><i>Remember:</i></b> Rock crushes Scissors, Paper covers Rock, Scissors cuts Paper.</p>
+                        </blockquote>
+                    </div>
+                    <div class="controller">
+                        <button type='button' class="btn btn-primary"><i class="fas fa-hand-rock"></i> Rock</button>
+                        <button type='button' class="btn btn-primary"><i class="fas fa-hand-paper"></i> Paper</button>
+                        <button type='button' class="btn btn-primary"><i class="fas fa-hand-scissors"></i> Scissors</button>
+                    </div>
+                    <div class="score">
+                        <div class="row">
+                            <div class="col">
+                                <!-- Player -->
+                                <div class="card">
+                                    <h5 class="card-header">Player</h5>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Score: <span class="player-score">0</span></h5>
+                                        <p class="card-text">Your choice: <b class="player-choice">Nothing!</b></p>
+                                    </div>
+                                </div>
+                                <!-- ./Player -->
+                            </div>
+                            <div class="col">
+                                <!-- Computer -->
+                                <div class="card">
+                                    <h5 class="card-header">Computer</h5>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Score: <span class="computer-score">0</span></h5>
+                                        <p class="card-text">Computer choice: <b class="computer-choice">Nothing!</b></p>
+                                    </div>
+                                </div>
+                                <!-- ./Computer -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="status">
+                        <div class="alert alert-success" role="alert">
+                            <b>Congratulations!</b> You won this round.
+                        </div>
+                        <div class="alert alert-danger" role="alert">
+                            <b>Oops!</b> Computer won this round.
+                        </div>
+                    </div>
+                </div>
+                <!-- ./Content -->
+            </div>
+        </div>
+    </div>
+    <!-- ./Wrapper -->
+    <!-- Script -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
