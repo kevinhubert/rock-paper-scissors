@@ -38,3 +38,10 @@ html body {
 #computer-choice {
     text-transform: capitalize !important;
 }
+
+@media only screen and (max-width: 767px) {
+    #player-choice,
+    #computer-choice {
+        display: block;
+    }
+}
