@@ -7,9 +7,9 @@ function start(inputBtn) {
     // Computer
     var randomNumber = Math.random();
     var computer = '';
-    if(randomNumber <= .25) {
+    if(randomNumber <= .33) {
         computer = 'rock';
-    } else if(randomNumber < .50 && randomNumber > .25) {
+    } else if(randomNumber <= .66 && randomNumber > .33) {
         computer = 'paper';
     } else {
         computer = 'scissors';
